@@ -1,6 +1,24 @@
+import {v4 as uuidv4} from "uuid"
+
 export const toDoStore = [
-    {text: "Go to Gym" , id:1},
-    {text: "Do Laundry", id:2},
-    {text: "Food Shopping", id:3},
-    {text: "Do Homework", id:4},
+    {
+        text: "Go to Gym", 
+        id: uuidv4(),
+        isComplete: false
+    },
+    {   
+        text: "Do Laundry", 
+        id: uuidv4(),
+        isComplete: false
+    },
+    {
+        text: "Food Shopping", 
+        id: uuidv4(),
+        isComplete: false
+    },
+    {
+        text: "Do Homework", 
+        id: uuidv4(),
+        isComplete: false
+    },
 ]

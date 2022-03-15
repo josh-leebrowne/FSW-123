@@ -1,3 +1,7 @@
+html{
+    display: flex;
+    justify-content: center;
+}
 .wrapper{
     border: none;
 }
