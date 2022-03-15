@@ -1,0 +1,16 @@
+html{
+    display: flex;
+    justify-content: center;
+}
+.wrapper{
+    border: none;
+}
+
+.cardOne, .cardTwo, .cardThree, .cardFour{
+    border: solid black 1px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    float: left;
+}
+
