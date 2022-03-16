@@ -1,0 +1,26 @@
+html {
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    height: 1000;
+    width: 1000;
+    background-color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+.iconWrapper{
+    height: 1000;
+    width: 1000;
+    background-color: rgb(139, 67, 221);
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    height: 1000;
+    width: 1000;
+    background-color: rgb(139, 67, 221);
+}
