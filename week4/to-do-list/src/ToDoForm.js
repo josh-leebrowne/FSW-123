@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 const ToDoForm = ( { addToDo, text } ) => {
-    const initInputs ={text: text || ''}
+    const initInputs = {text: text || ''}
     const [data, setData] = useState(initInputs)
 
     const handleChange = (e) => {

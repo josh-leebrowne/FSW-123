@@ -25,15 +25,11 @@ const App = () => {
         setToDos(newItem)
     }
 
-    const toDoForm = todos.map(todo => 
-      <ToDoForm 
-      {...todo}
-      key={todo.text}
-      addToDo={addTodo}/>)
+
   return (
     <>
+      <ToDoForm  text={todos.text} key={todos.text} addToDo={addTodo}/>
       <ToDoList  todos={todos} completeToDo={completeToDo} deleteToDo={deleteToDo} key={todos.name}/>
-      {toDoForm}
     </>
   );
 }
