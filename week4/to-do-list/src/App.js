@@ -19,17 +19,19 @@ const App = () => {
         setToDos(deletedItem)
     }
 
-    const addTodo = (id) => {
+    const addTodo = (value) => {
+        console.log(value)
         const completedItems = [...todos]
-        const newItem = completedItems.push((todo) => todo.id === id)
-        setToDos(newItem)
+        completedItems.push(value) //Mutates original array
+        console.log(completedItems)
+        setToDos(completedItems)
     }
 
 
   return (
     <>
-      <ToDoForm  text={todos.text} key={todos.text} addToDo={addTodo}/>
-      <ToDoList  todos={todos} completeToDo={completeToDo} deleteToDo={deleteToDo} key={todos.name}/>
+      <ToDoForm  addToDo={addTodo}/>
+      <ToDoList  todos={todos} completeToDo={completeToDo} deleteToDo={deleteToDo}/>
     </>
   );
 }

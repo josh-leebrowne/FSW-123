@@ -1,12 +1,14 @@
 import { useState } from "react"
+import { v4 as uuidv4 } from "uuid"
 
 const ToDoForm = ( { addToDo, text } ) => {
-    const initInputs = {text: text || ''}
+    const initInputs = {text: text || '', _id: uuidv4() , isComplete:false}
     const [data, setData] = useState(initInputs)
 
     const handleChange = (e) => {
-        const {text, value} = e.target
-        setData(prevData=>({...prevData, [text]: value}))
+        const {name, value} = e.target
+        console.log(name)
+        setData(prevData=>({...prevData, [name]: value}))
     }
 
     const handleSubmit = (e) => {
@@ -17,7 +19,8 @@ const ToDoForm = ( { addToDo, text } ) => {
 
     return(
         <form onSubmit={handleSubmit} className="formDiv">
-            <input 
+            <input
+            name="text"
             type="text" 
             onChange={handleChange}/>
             <button>Add</button>
