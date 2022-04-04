@@ -14,7 +14,11 @@ const App = () => {
         setToDos(completedItems)
     }
     
-    
+    const deleteToDo = (id) => {
+        const deletedItem = todos.filter((todo) => todo.id !== id)
+        setToDos(deletedItem)
+    }
+
     const addTodo = (value) => {
         console.log(value)
         const completedItems = [...todos]
@@ -23,21 +27,12 @@ const App = () => {
         setToDos(completedItems)
     }
 
-    const editTodo = (id) => {
-      const editItem = todos.map(item => item.id !== id ? item : null)
-      setToDos(editItem)
-    }
-
-    const deleteToDo = (id) => {
-      const deletedItem = todos.filter((todo) => todo.id !== id)
-      setToDos(deletedItem)
-  }
 
 
   return (
     <>
       <ToDoForm  addToDo={addTodo}/>
-      <ToDoList  todos={todos} completeToDo={completeToDo} deleteToDo={deleteToDo} editTodo={editTodo}/>
+      <ToDoList  todos={todos} completeToDo={completeToDo} deleteToDo={deleteToDo}/>
     </>
   );
 }
