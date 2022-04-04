@@ -9,7 +9,7 @@ const ToDo = ( {toDoItem, completeToDo, deleteToDo, editTodo, text} ) => {
             <input type="checkbox" onChange = { () => completeToDo(toDoItem.id) }/>{toDoItem.text}
             { !editToggle ?
                 <>
-                    <button onClick={ () => deleteToDo(toDoItem.id)}>Delete</button>
+                    <button onClick={ () => deleteToDo(toDoItem._id)}>Delete</button>
                     <button onClick={ () => setEditToggle(prevToggle => !prevToggle)}>Edit</button>
                 </>
                 :

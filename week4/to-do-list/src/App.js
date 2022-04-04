@@ -29,7 +29,7 @@ const App = () => {
     }
 
     const deleteToDo = (id) => {
-      const deletedItem = todos.filter((todo) => todo.id !== id)
+      const deletedItem = todos.filter((todo) => todo._id !== id)
       setToDos(deletedItem)
   }
 
