@@ -1,0 +1,91 @@
+html{
+    padding: 50px 50px 50px 50px;
+    background: radial-gradient(rgb(189, 81, 223), rgb(54, 54, 216));
+    text-align: center;
+}
+
+.title {
+    background: linear-gradient(rgb(226, 138, 24), rgb(40, 172, 91));
+    border-bottom: 10px solid rgb(197, 87, 230);
+    color: rgb(122, 52, 113);
+    font-size: 60px;
+    padding: 15px;
+}
+
+button {
+    background-color: rgb(197, 87, 230);
+    width: 200px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.app {
+    width: 100%;
+    display: flex;
+}
+
+.Drinks {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Drink {
+    flex: 1 0 auto;
+    min-width: 0;
+    background-color: rgb(24, 141, 141);
+    margin: 15px 15px 15px 15px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+}
+.drink-name {
+    background-color: rgb(231, 143, 143);
+    padding: 10px;
+    border-radius: 5px;
+}
+.image {
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black;
+}
+
+
+
+.randomdrink-container {
+    text-align: center;
+}
+
+.search-input{
+    background-color: rgb(181, 241, 231);
+    width: 400px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.form{
+    text-align: center;
+}
+
+.loading-screen {
+    text-align: center;
+}
+
+.ingredients-form {
+    background-color: rgb(204, 79, 79);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}

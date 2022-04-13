@@ -25,9 +25,7 @@ const Giphy = () => {
                 setIsError(true)
                 console.log(err)
             }
-            
         };
-
         fetchData()
     },[])
     
