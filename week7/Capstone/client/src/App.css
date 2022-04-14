@@ -81,11 +81,16 @@ button {
     text-align: center;
 }
 
+
+
 .ingredients-form {
-    background-color: rgb(204, 79, 79);
-    width: 500px;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
+    background-color: rgb(204, 79, 79);
+    border: 5px solid rgb(24, 141, 141);
+    border-radius: 5px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 500px;
+    text-align: center;
 }
+
