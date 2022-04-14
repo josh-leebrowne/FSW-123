@@ -11,7 +11,7 @@ const MyList = ({setDrinks}) => {
     return (
         <div>
             <button className="my-list" onClick={setMyList}>My List</button>
-            <RenderDrinks setMyList={setMyList}/>
+            {/* <RenderDrinks setMyList={setMyList}/> */}
         </div>
     )
 }

@@ -9,14 +9,15 @@ const RenderDrinks = ({drinks, isLoading}) => {
         return (
             <div key={e.idDrink} className='Drink'>
                 <h3 className='drink-name'>{e.strDrink}</h3>
-                <img src={e.strDrinkThumb} alt={"No Image Available"} className="image"></img>
+                <img src={e.strDrinkThumb} alt={""} className="image"></img>
                 <button className='add-drink' onClick={()=> setLocalStorage(e)}>Add to My List</button>
                 <button className="ingredients" onClick={()=> setEditToggle(prevToggle => !prevToggle)}>Ingredients</button>
             </div>
         )
     })
 
-
+    console.log(mappedDrinks)
+    
     return (
         <div className='Drinks'>
             {!editToggle ?
@@ -25,7 +26,7 @@ const RenderDrinks = ({drinks, isLoading}) => {
                 </>
                 :
                 <>
-                    <IngredientsFormHandler drinks={drinks} mappedDrinks={mappedDrinks}/>
+                    <IngredientsFormHandler mappedDrinks={mappedDrinks}/>
                     <button className="close-btn" onClick={()=> setEditToggle(prevToggle => !prevToggle)}>Close</button>
                 </>
             }

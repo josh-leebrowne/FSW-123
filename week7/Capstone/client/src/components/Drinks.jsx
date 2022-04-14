@@ -13,12 +13,11 @@ const Drinks = ({setDrinks, setIsLoading}) => {
         try {
             let response = await apiRequest('https://www.thecocktaildb.com/api/json/v1/1/search.php?s=')
             setDrinks(response.drinks)
-            console.log(response.drinks)
             setIsLoading(false)
         } 
         catch (err) {
-                setIsError(true)
-                console.log(err)
+            setIsError(true)
+            console.log(err)
         }
         }
         getData()

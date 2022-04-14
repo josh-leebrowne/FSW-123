@@ -7,7 +7,7 @@ const RandomDrink = ({setDrinks, setIsLoading}) => {
 
         try{
             let response = await apiRequest('https://www.thecocktaildb.com/api/json/v1/1/random.php')
-            console.log(response.drinks)
+            console.log(response)
             setDrinks(response.drinks)
             setIsLoading(false)
         }
